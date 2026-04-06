@@ -1,0 +1,5 @@
+{
+  "name": "Utsav Restaurant",
+  "description": "A high-converting, elegant website for Utsav Restaurant featuring an interactive menu, reservations, and a rich brand story.",
+  "requestFramePermissions": ["geolocation"]
+}

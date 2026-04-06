@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-saffron: #f4a261;
+  --color-deep-red: #9e2a2b;
+  --color-gold: #d4af37;
+  --color-warm-cream: #fefae0;
+  --color-charcoal: #264653;
+}
+
+@layer base {
+  body {
+    @apply bg-warm-cream text-charcoal font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+.sticky-header {
+  @apply sticky top-0 z-50 backdrop-blur-md bg-warm-cream/80 border-b border-saffron/20;
+}
+
+.btn-primary {
+  @apply px-8 py-3 bg-deep-red text-white font-bold rounded-full hover:bg-deep-red/90 transition-all transform hover:scale-105 active:scale-95 shadow-lg;
+}
+
+.btn-secondary {
+  @apply px-8 py-3 border-2 border-deep-red text-deep-red font-bold rounded-full hover:bg-deep-red hover:text-white transition-all transform hover:scale-105 active:scale-95;
+}
+
+.section-padding {
+  @apply py-20 px-6 max-w-7xl mx-auto;
+}
+
+.menu-item-card {
+  @apply bg-white p-6 rounded-2xl shadow-sm border border-saffron/10 hover:shadow-md transition-shadow;
+}
